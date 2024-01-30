@@ -1,0 +1,31 @@
+circle_area <- function(radius) {
+  area <- pi * radius^2
+  return(area)
+}
+
+triangle_area <- function(base, height) {
+  area <- 0.5 * base * height
+  return(area)
+}
+Rectangle_area <- function(length, breadth) {
+  area <- length*breadth
+  return(area)
+}
+Cuboid_volume <- function(length,breadth,height) {
+	volume <- length*breadth*height
+	return(volume)
+}
+radius <- 5
+base <- 10
+height <- 7
+length <-10
+breadth <-20
+
+circle_area_result <- circle_area(radius)
+triangle_area_result <- triangle_area(base, height)
+Rectangle_area_result <- Rectangle_area(length, breadth)
+Cuboid_volume_result <- Cuboid_volume(length,breadth,height)
+print(paste("The area of the circle is:", circle_area_result))
+print(paste("The area of the triangle is:", triangle_area_result))
+print(paste("The area of the triangle is:", Rectangle_area_result))
+print(paste("The volume of the  is:", Cuboid_volume_result))
